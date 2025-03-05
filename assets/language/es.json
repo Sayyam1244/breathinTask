@@ -1,0 +1,20 @@
+{
+    "welcome": "Bienvenido a Breathin",
+    "take_care_of_hives": "Cuida de tus colmenas con Breathin",
+    "get_started": "Comenzar",
+    "choose_language": "Elige el idioma",
+    "enter_details": "Por favor ingrese sus datos para continuar",
+    "select_language": "Por favor seleccione su idioma, siempre puede cambiar su preferencia en la configuración.",
+    "email": "Correo electrónico",
+    "search": "Buscar",
+    "example_email": "ejemplo@gmail.com",
+    "password": "Contraseña",
+    "password_hint": "debe tener 8 caracteres",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "accept_terms": "Acepto los términos y la política de privacidad",
+    "continue": "Continuar",
+    "sign_in_google": "Iniciar sesión con Google",
+    "sign_in_apple": "Iniciar sesión con Apple",
+    "breathin": "Breathïn",
+    "search_here": "Buscar aquí"
+}

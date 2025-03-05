@@ -1,0 +1,20 @@
+{
+    "welcome": "Welcome to Breathin",
+    "take_care_of_hives": "Take care of your hives through Breathin",
+    "get_started": "Get Started",
+    "choose_language": "Choose the language",
+    "enter_details": "Please enter your details to continue",
+    "select_language": "Please select your language, you can always change your preference in settings.",
+    "email": "Email",
+    "search": "Search",
+    "example_email": "example@gmail.com",
+    "password": "Password",
+    "password_hint": "Must be 8 characters",
+    "forgot_password": "Forgot Password?",
+    "accept_terms": "I accept the terms and privacy policy",
+    "continue": "Continue",
+    "sign_in_google": "Sign in with Google",
+    "sign_in_apple": "Sign in with Apple",
+    "breathin": "Breathïn",
+    "search_here": "Search here"
+}
