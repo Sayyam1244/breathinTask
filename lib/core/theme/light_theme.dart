@@ -9,6 +9,7 @@ ThemeData light(BuildContext context) => ThemeData(
       fontFamily: 'Poppins',
       useMaterial3: true,
       brightness: Brightness.light,
+      dividerColor: borderColorLight,
       colorScheme: ColorScheme.fromSeed(
         primary: primaryColor,
         seedColor: primaryColor,

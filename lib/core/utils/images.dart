@@ -2,7 +2,7 @@
 
 class Images {
   static String authBackground = 'assets/images/auth_background.jpeg';
-  static String englishFlag = 'assets/images/english.svg';
-  static String frenchFlag = 'assets/images/french.svg';
-  static String spanishFlag = 'assets/images/spanish.svg';
+  static String englishFlag = 'assets/images/english.png';
+  static String frenchFlag = 'assets/images/french.png';
+  static String spanishFlag = 'assets/images/spanish.png';
 }

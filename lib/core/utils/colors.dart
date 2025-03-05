@@ -5,6 +5,9 @@ const Color primaryColor = Color(0xFFF1BF98);
 // background colors
 const Color backgroundColorLight = Color(0xFFF5F5F5);
 
+// border colors
+const Color borderColorLight = Color(0xffD8DADC);
+
 const Color transparent = Colors.transparent;
 
 // shadow colors

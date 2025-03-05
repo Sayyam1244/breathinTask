@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 Future<dynamic> launchScreen(Widget child,
     {bool pushAndRemove = false, bool replace = false}) async {
-  const Duration duration = Duration(milliseconds: 500);
+  const Duration duration = Duration(milliseconds: 100);
   final Route route = PageRouteBuilder(
     pageBuilder: (context, animation, secondaryAnimation) => child,
     transitionsBuilder: (context, animation, secondaryAnimation, child) {

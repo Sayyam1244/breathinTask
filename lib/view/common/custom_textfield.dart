@@ -16,8 +16,13 @@ class CustomTextField extends StatelessWidget {
   final TextInputType? keyboardType;
   final TextInputAction? textInputAction;
   final void Function()? onTap;
+  final double? hintSize;
+  final InputBorder? enabledBorder;
+  final InputBorder? focusBorder;
+  final Color? textcolor;
 
   const CustomTextField({
+    this.textcolor,
     this.controller,
     this.hintText,
     this.labeImage,
@@ -33,6 +38,9 @@ class CustomTextField extends StatelessWidget {
     this.keyboardType,
     this.textInputAction,
     this.onTap,
+    this.enabledBorder,
+    this.focusBorder,
+    this.hintSize,
     super.key,
   });
 
@@ -63,17 +71,22 @@ class CustomTextField extends StatelessWidget {
           textInputAction: textInputAction,
           onTap: onTap,
           decoration: InputDecoration(
+            enabledBorder: enabledBorder,
+            focusedBorder: focusBorder,
             floatingLabelBehavior: FloatingLabelBehavior.never,
             prefixIcon: prefixIcon != null
-                ? Icon(prefixIcon,
-                    size: 20.sp, color: context.theme.iconTheme.color)
+                ? Icon(prefixIcon, size: 20.sp, color: context.theme.hintColor)
                 : null,
             hintText: hintText,
-            hintStyle:
-                bodySmall(context).copyWith(color: Theme.of(context).hintColor),
+            hintStyle: bodySmall(context).copyWith(
+              color: Theme.of(context).hintColor,
+              fontSize: hintSize,
+            ),
             suffixIcon: suffixIcon,
           ),
-          style: bodyMedium(context),
+          style: bodyMedium(context).copyWith(
+            color: textcolor,
+          ),
         ),
       ],
     );
