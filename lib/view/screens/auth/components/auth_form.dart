@@ -103,7 +103,6 @@ class _AuthFormState extends State<AuthForm> {
             CustomButton(
               text: 'continue'.tr,
               onTap: () {
-                // launchScreen(const SelectedLanguage());
                 if (formKey.currentState?.validate() ?? false) {
                   log('asdf');
                   isSignup
@@ -119,8 +118,8 @@ class _AuthFormState extends State<AuthForm> {
               child: RichText(
                 text: TextSpan(
                   text: isSignup
-                      ? 'dont_have_account'.tr
-                      : 'already_have_account'.tr,
+                      ? 'already_have_account'.tr
+                      : 'dont_have_account'.tr,
                   style: bodyMedium(context).copyWith(
                     color: context.theme.colorScheme.onBackground,
                   ),
@@ -132,7 +131,7 @@ class _AuthFormState extends State<AuthForm> {
                             isSignup = !isSignup;
                           });
                         },
-                      text: " ${isSignup ? 'sign_up'.tr : 'sign_in'.tr}",
+                      text: " ${isSignup ? 'sign_in'.tr : 'sign_up'.tr}",
                       style: bodyMedium(context).copyWith(
                         color: context.theme.colorScheme.onBackground,
                         fontWeight: FontWeight.bold,
