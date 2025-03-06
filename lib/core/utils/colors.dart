@@ -24,4 +24,4 @@ const Color textColorWhite = Colors.white;
 const Color iconColorLight = Color(0xff606060);
 
 // error colors
-const Color redColor = Color(0xffF84135);
+const Color redColor = Color(0xffE2190C);

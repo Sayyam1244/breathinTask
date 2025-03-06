@@ -1,7 +1,5 @@
 import 'dart:developer';
-
 import 'package:breathin/imports.dart';
-import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -32,9 +30,10 @@ class CustomButton extends StatelessWidget {
         color: backgroundColor ?? context.theme.colorScheme.primary,
         borderRadius: BorderRadius.circular(borderRadius ?? 10.sp),
       ),
-      child: Center(
-        child: InkWell(
-          onTap: onTap,
+      child: MaterialButton(
+        padding: EdgeInsets.zero,
+        onPressed: onTap,
+        child: Center(
           child: Text(
             text,
             style: bodyLarge(context).copyWith(

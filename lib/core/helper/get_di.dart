@@ -1,3 +1,6 @@
+import 'package:breathin/controllers/auth_controller.dart';
+import 'package:breathin/controllers/songs_controller.dart';
+import 'package:breathin/controllers/user_controller.dart';
 import 'package:breathin/imports.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -12,10 +15,18 @@ Future<Map<String, Map<String, String>>> init() async {
       fenix: true);
   Get.lazyPut<AuthRepository>(() => AuthRepository(userRepository: Get.find()),
       fenix: true);
+  Get.lazyPut<SongsRepository>(() => SongsRepository(), fenix: true);
   // Controllers
   Get.lazyPut<ThemeController>(() => ThemeController(), fenix: true);
+  Get.lazyPut<AuthController>(() => AuthController(authRepository: Get.find()),
+      fenix: true);
+  Get.lazyPut<UserController>(() => UserController(userRepository: Get.find()),
+      fenix: true);
   Get.lazyPut<LocalizationController>(
       () => LocalizationController(localizationRepo: Get.find()),
+      fenix: true);
+  Get.lazyPut<SongsController>(
+      () => SongsController(songsRepository: Get.find()),
       fenix: true);
 
   // Retrieving localized data

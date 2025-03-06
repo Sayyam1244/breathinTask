@@ -1,4 +1,6 @@
+import 'package:breathin/controllers/user_controller.dart';
 import 'package:breathin/imports.dart';
+import 'package:breathin/view/screens/dashboard/dashboard_screen.dart';
 import 'package:breathin/view/screens/lang/components/langauge_tile.dart';
 
 class SelectedLanguage extends StatefulWidget {
@@ -88,7 +90,7 @@ class _SelectedLanguageState extends State<SelectedLanguage> {
             CustomButton(
               text: 'continue'.tr,
               onTap: () {
-                launchScreen(const HomeScreen());
+                UserController.to.updateLang(Get.locale!.languageCode);
               },
             ),
           ],

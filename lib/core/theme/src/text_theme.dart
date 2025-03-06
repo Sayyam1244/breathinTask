@@ -45,7 +45,7 @@ TextTheme textThemeLight(BuildContext context) {
     titleSmall: TextStyle(
       fontSize: 18.0.sp,
       fontWeight: FontWeight.w400,
-      fontFamily: 'Helvetica',
+      fontFamily: 'Raglika',
     ),
     bodyLarge: TextStyle(
       fontSize: 16.0.sp,

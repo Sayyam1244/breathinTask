@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:flutter/material.dart';
 export 'package:get/get.dart';
@@ -15,7 +17,7 @@ export 'package:breathin/data/repository/user/user_repository.dart';
 export 'package:breathin/core/utils/app_constants.dart';
 export 'package:flutter/services.dart';
 export 'package:breathin/controllers/theme_controller.dart';
-export 'package:breathin/data/repository/localization_repo/localization_repo.dart';
+export 'package:breathin/data/repository/localization/localization_repo.dart';
 export 'package:breathin/controllers/localization_controller.dart';
 export 'package:breathin/core/theme/light_theme.dart';
 export 'package:breathin/core/utils/messages.dart';
@@ -32,3 +34,11 @@ export 'package:breathin/view/common/custom_back_button.dart';
 export 'package:breathin/view/common/custom_appbar.dart';
 export 'package:breathin/core/helper/navigation.dart';
 export 'package:breathin/view/screens/home/home_screen.dart';
+export 'package:flutter_svg/svg.dart';
+export 'package:breathin/view/common/custom_icon_widget.dart';
+export 'package:breathin/view/screens/home/components/search_field.dart';
+export 'package:collection/collection.dart';
+export 'package:breathin/view/screens/lang/select_langauge.dart';
+export 'package:breathin/view/common/snackbar.dart';
+export 'package:breathin/data/model/response/song_model.dart';
+export 'package:breathin/data/repository/songs/songs_repo.dart';

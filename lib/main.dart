@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:breathin/imports.dart';
 import 'package:breathin/view/screens/auth/auth_screen.dart';
 import 'core/helper/get_di.dart' as di;

@@ -50,19 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDITNxUvwZCAgXYMrLtW2nI1AiHgH_-qT4',
-    appId: '1:552614808605:android:80ad1ceb40e499c843caf4',
-    messagingSenderId: '552614808605',
-    projectId: 'breathintask',
-    storageBucket: 'breathintask.firebasestorage.app',
+    apiKey: 'AIzaSyDZ6cLifNj9tlwHWymwNyShxNL66bxAeok',
+    appId: '1:533317893271:android:5536698ee3b5ec42773dd2',
+    messagingSenderId: '533317893271',
+    projectId: 'breathintaskinfiniti',
+    storageBucket: 'breathintaskinfiniti.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDKzvaMg8mGj0El5QCphUcdLtaa8h8ETvk',
-    appId: '1:552614808605:ios:d66ce16170c4fa9243caf4',
-    messagingSenderId: '552614808605',
-    projectId: 'breathintask',
-    storageBucket: 'breathintask.firebasestorage.app',
+    apiKey: 'AIzaSyAzjx1EwoJ47b_cnu4b7z8UsxyhpGs8v34',
+    appId: '1:533317893271:ios:b540758bb820d798773dd2',
+    messagingSenderId: '533317893271',
+    projectId: 'breathintaskinfiniti',
+    storageBucket: 'breathintaskinfiniti.firebasestorage.app',
     iosBundleId: 'com.example.breathin',
   );
+
 }

@@ -16,5 +16,14 @@
     "sign_in_google": "Se connecter avec Google",
     "sign_in_apple": "Se connecter avec Apple",
     "breathin": "Breathïn",
-    "search_here": "Rechercher ici"
+    "search_here": "Rechercher ici",
+    "favorites": "Favorites",
+    "featured": "Featured",
+    "mins": "mins",
+    "exercises": "Exercises",
+    "dont_have_account": "Don't have an account?",
+    "sign_up": "Sign Up",
+    "already_have_account": "Already have an account?",
+    "sign_in": "Sign In",
+    "see_all": "See All"
 }

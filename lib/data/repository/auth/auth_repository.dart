@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:breathin/data/repository/user/user_repository.dart';
 import 'package:breathin/imports.dart';
 
@@ -12,7 +14,8 @@ class AuthRepository {
     try {
       await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);
-      return FirebaseAuth.instance.currentUser;
+      return userRepository.getUser(
+          docId: FirebaseAuth.instance.currentUser!.uid);
     } catch (e) {
       return AuthExceptionHandler.handleAuthException(e);
     }
@@ -21,12 +24,15 @@ class AuthRepository {
   Future createUser(UserBody userBody) async {
     try {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
-          email: userBody.email, password: userBody.password);
-      return userRepository.createUser(userBody);
+          email: userBody.email!, password: userBody.password!);
+      userBody.uid = FirebaseAuth.instance.currentUser!.uid;
+
+      return await userRepository.createUser(userBody);
     } catch (e) {
       return AuthExceptionHandler.handleAuthException(e);
     }
   }
+
   // static Future continueWithGoogle() async {
   //   try {
   //     GoogleSignIn googleSignIn = GoogleSignIn();

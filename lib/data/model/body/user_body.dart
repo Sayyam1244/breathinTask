@@ -1,24 +1,26 @@
+import 'dart:developer';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class UserBody {
-  final String uid;
-  final String email;
-  final String password;
+  String? uid;
+  final String? email;
+  final String? password;
   final String? lang;
 
   UserBody({
-    required this.uid,
-    required this.email,
+    this.uid,
+    this.email,
     this.lang,
-    required this.password,
+    this.password,
   });
 
   Map<String, dynamic> toJson() {
     return {
       'uid': uid,
-      'email': email,
-      'lang': lang,
-      'createdAt': FieldValue.serverTimestamp(),
+      if (email != null) 'email': email,
+      if (lang != null) 'lang': lang,
+      'modifiedAt': FieldValue.serverTimestamp(),
     };
   }
 }

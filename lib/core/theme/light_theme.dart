@@ -10,12 +10,23 @@ ThemeData light(BuildContext context) => ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
       dividerColor: borderColorLight,
+      sliderTheme: SliderThemeData(
+        trackHeight: 1.0,
+        activeTrackColor: primaryColor,
+        thumbColor: primaryColor,
+        overlayColor: primaryColor.withOpacity(0.3),
+        valueIndicatorColor: primaryColor,
+        valueIndicatorTextStyle: bodySmall(context).copyWith(
+          color: textColorBlack,
+        ),
+      ),
       colorScheme: ColorScheme.fromSeed(
         primary: primaryColor,
         seedColor: primaryColor,
         secondary: primaryColor,
         background: backgroundColorLight,
         onBackground: textColorBlack,
+        error: redColor,
       ).copyWith(
           //
           ),

@@ -1,8 +1,11 @@
+import 'dart:developer';
+
 import 'package:breathin/imports.dart';
 
 class UserRepository {
   Future createUser(UserBody userBody) async {
     try {
+      log(userBody.toJson().toString());
       await FirebaseFirestore.instance
           .collection('users')
           .doc(userBody.uid)
@@ -15,10 +18,12 @@ class UserRepository {
 
   Future updateUser(UserBody userBody) async {
     try {
+      log(userBody.toJson().toString());
+      userBody.uid = FirebaseAuth.instance.currentUser!.uid;
       await FirebaseFirestore.instance
           .collection('users')
           .doc(userBody.uid)
-          .set(userBody.toJson());
+          .update(userBody.toJson());
       return await getUser();
     } catch (e) {
       return e.toString();

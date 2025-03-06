@@ -9,7 +9,7 @@ class CustomBackButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       clipBehavior: Clip.hardEdge,
-      margin: EdgeInsets.symmetric(horizontal: 20.sp),
+      margin: EdgeInsets.symmetric(horizontal: 20.sp, vertical: 10.sp),
       decoration: BoxDecoration(
         border: Border.all(width: 1, color: context.theme.dividerColor),
         borderRadius: borderRadiusSmall,
