@@ -35,21 +35,4 @@ class AudioPlayerHelper {
   Stream<PlayerState> get playerStateStream => _audioPlayer.playerStateStream;
   Duration? get duration => _audioPlayer.duration;
   Duration? get currentDuration => _audioPlayer.position;
-
-  // Stream<bool> get bufferingStream => _audioPlayer.bufferingStream;
-
-  // Stream<double> get volumeStream => _audioPlayer.volumeStream;
-
-  // Stream<int> get sequenceStream =>
-  //     _audioPlayer.sequenceStateStream.map((state) => state?.currentIndex ?? 0);
-
-  // Stream<int> get indexStream => _audioPlayer.currentIndexStream;
-
-  // Stream<void> get completionStream => _audioPlayer.processingStateStream
-  //     .where((state) => state == ProcessingState.completed);
-
-  // Stream<void> get errorStream =>
-  //     _audioPlayer.playbackEventStream.where((event) =>
-  //         event.processingState == ProcessingState.idle &&
-  //         event.updatePosition == Duration.zero);
 }
